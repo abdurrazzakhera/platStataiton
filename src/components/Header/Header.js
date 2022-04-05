@@ -5,7 +5,6 @@ import "./Header.css";
 const Header = () => {
   return (
     <div>
-      <h2>WellCome To Our Fancy Website</h2>
       <nav className='flex justify-center space-x-10 my-4'>
         <CustomLink className='btn-manu' to='./home'>
           Home

@@ -10,13 +10,12 @@ const Home = () => {
   return (
     <div>
       <div>
-        <h2>Home Page</h2>
         <div className='container mx-auto'>
           <HomeBanner></HomeBanner>
         </div>
       </div>
       <div>
-        <h2>The review langth : {reviews.length}</h2>
+        <h2>Top Review</h2>
         <div className='container mx-auto grid grid-cols-3 gap-4 border-2 p-2'>
           {reviews.slice(0, 3).map((review) => (
             <Review review={review}></Review>

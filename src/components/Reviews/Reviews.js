@@ -6,7 +6,7 @@ const Reviews = () => {
   const [reviews, setReviews] = useReviews();
   return (
     <div>
-      <h1>This is Reviews</h1>
+      <h1>What Our Client Say!!</h1>
       <div className='container mx-auto grid grid-cols-3 gap-4'>
         {reviews.map((review) => (
           <Review review={review}></Review>
