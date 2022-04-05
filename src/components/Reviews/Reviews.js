@@ -6,7 +6,9 @@ const Reviews = () => {
   const [reviews, setReviews] = useReviews();
   return (
     <div>
-      <h1>What Our Client Say!!</h1>
+      <h1 className='text-sky-600 text-5xl font-bold text-center my-5'>
+        What Our Client Say!!
+      </h1>
       <div className='container mx-auto grid grid-cols-3 gap-4'>
         {reviews.map((review) => (
           <Review review={review}></Review>

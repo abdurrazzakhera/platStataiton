@@ -21,8 +21,10 @@ const DashBoard = () => {
   }, []);
   return (
     <div className='container'>
-      <h1>DashBoard</h1>
-      <div className='flex items-end gap-5 justify-around'>
+      <h1 className='text-sky-600 text-4xl font-semibold text-center my-5'>
+        DashBoard
+      </h1>
+      <div className='flex items-end gap-5 justify-around mb-5'>
         <div className='border-b-4'>
           <LineChart data={data} width={530} height={500}>
             <Line type='monotone' dataKey='revenue' stroke='#8884d8'></Line>

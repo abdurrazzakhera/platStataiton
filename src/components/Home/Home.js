@@ -15,14 +15,16 @@ const Home = () => {
         </div>
       </div>
       <div>
-        <h2>Top Review</h2>
-        <div className='container mx-auto grid grid-cols-3 gap-4 border-2 p-2'>
+        <h2 className='text-sky-600 text-5xl font-bold text-center my-5'>
+          Top Review
+        </h2>
+        <div className='container mx-auto grid grid-cols-3 gap-4  p-2'>
           {reviews.slice(0, 3).map((review) => (
             <Review review={review}></Review>
           ))}
         </div>
-        <div className='my-5'>
-          <Link className='btn-reviews' to='/reviews'>
+        <div className='my-5 text-center'>
+          <Link className='btn-reviews  my-5' to='/reviews'>
             See All Reviews
           </Link>
         </div>
